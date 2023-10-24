@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/pavan/playwrightAutomation/playwright.config.js",
-    "rootDir": "/Users/pavan/playwrightAutomation/tests",
+    "configFile": "D:\\playwrightautomation\\playwright.config.js",
+    "rootDir": "D:/playwrightautomation/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,7 +10,9 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
     "reporter": [
       [
@@ -41,12 +43,12 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/pavan/playwrightAutomation/test-results",
+        "outputDir": "D:/playwrightautomation/test-results",
         "repeatEach": 1,
         "retries": 0,
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/pavan/playwrightAutomation/tests",
+        "testDir": "D:/playwrightautomation/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -56,19 +58,19 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.34.2",
-    "workers": 3,
+    "version": "1.39.0",
+    "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "Reporters.spec.js",
-      "file": "Reporters.spec.js",
+      "title": "DropDowns.spec.js",
+      "file": "DropDowns.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Test1",
+          "title": "Handle dropdowns",
           "ok": true,
           "tags": [],
           "tests": [
@@ -82,89 +84,60 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1209,
+                  "duration": 11029,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "United States\n"
+                    },
+                    {
+                      "text": "Canada\n"
+                    },
+                    {
+                      "text": "United Kingdom\n"
+                    },
+                    {
+                      "text": "Germany\n"
+                    },
+                    {
+                      "text": "France\n"
+                    },
+                    {
+                      "text": "Australia\n"
+                    },
+                    {
+                      "text": "Japan\n"
+                    },
+                    {
+                      "text": "China\n"
+                    },
+                    {
+                      "text": "Brazil\n"
+                    },
+                    {
+                      "text": "India\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-07-26T06:13:02.184Z",
+                  "startTime": "2023-10-24T09:31:27.935Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "399bcd1299f62012f68d-95434237692cbd161c3b",
-          "file": "Reporters.spec.js",
+          "id": "bee60c1b28c44ffe6122-f933b8067fce2e93ed52",
+          "file": "DropDowns.spec.js",
           "line": 3,
-          "column": 1
-        },
-        {
-          "title": "Test2",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 1269,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-26T06:13:02.184Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "399bcd1299f62012f68d-064de90a5d2bda0e3e44",
-          "file": "Reporters.spec.js",
-          "line": 8,
-          "column": 1
-        },
-        {
-          "title": "Test3",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 1458,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2023-07-26T06:13:02.184Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "399bcd1299f62012f68d-6ef640acef5b31d772c8",
-          "file": "Reporters.spec.js",
-          "line": 14,
           "column": 1
         }
       ]
     }
   ],
-  "errors": []
+  "errors": [],
+  "stats": {
+    "startTime": "2023-10-24T09:31:27.038Z",
+    "duration": 13604.372
+  }
 }
