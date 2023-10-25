@@ -1,19 +1,22 @@
-<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="13.489429">
-<testsuite name="DropDowns.spec.js" timestamp="2023-10-24T09:31:27.188Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.029" errors="0">
-<testcase name="Handle dropdowns" classname="DropDowns.spec.js" time="11.029">
-<system-out>
-<![CDATA[United States
-Canada
-United Kingdom
-Germany
-France
-Australia
-Japan
-China
-Brazil
-India
+<testsuites id="" name="" tests="1" failures="1" skipped="0" errors="0" time="10.14525">
+<testsuite name="MultiSelectDropdown.spec.js" timestamp="2023-10-25T14:03:23.136Z" hostname="chromium" tests="1" failures="1" skipped="0" time="7.554" errors="0">
+<testcase name="Handle dropdowns" classname="MultiSelectDropdown.spec.js" time="7.554">
+<failure message="MultiSelectDropdown.spec.js:3:1 Handle dropdowns" type="FAILURE">
+<![CDATA[  [chromium] › MultiSelectDropdown.spec.js:3:1 › Handle dropdowns ──────────────────────────────────
+
+    TypeError: page.$$(...).textContent is not a function
+
+      14 |
+      15 |     //2) check number of options in dropdown using JS array
+    > 16 |     const options=await page.$$('#colors option').textContent()
+         |                                                   ^
+      17 |     console.log("Number of options:",options)
+      18 |     //await expect(options.length).toBe(5);
+      19 |
+
+        at D:\playwrightautomation\tests\MultiSelectDropdown.spec.js:16:51
 ]]>
-</system-out>
+</failure>
 </testcase>
 </testsuite>
 </testsuites>

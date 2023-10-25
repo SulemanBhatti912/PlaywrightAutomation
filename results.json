@@ -64,14 +64,14 @@
   },
   "suites": [
     {
-      "title": "DropDowns.spec.js",
-      "file": "DropDowns.spec.js",
+      "title": "MultiSelectDropdown.spec.js",
+      "file": "MultiSelectDropdown.spec.js",
       "column": 0,
       "line": 0,
       "specs": [
         {
           "title": "Handle dropdowns",
-          "ok": true,
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -83,52 +83,45 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 11029,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "United States\n"
+                  "status": "failed",
+                  "duration": 7554,
+                  "error": {
+                    "message": "page.$$(...).textContent is not a function",
+                    "stack": "TypeError: page.$$(...).textContent is not a function\n    at D:\\playwrightautomation\\tests\\MultiSelectDropdown.spec.js:16:51",
+                    "location": {
+                      "file": "D:\\playwrightautomation\\tests\\MultiSelectDropdown.spec.js",
+                      "column": 51,
+                      "line": 16
                     },
+                    "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m     \u001b[90m//2) check number of options in dropdown using JS array\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m options\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$$(\u001b[32m'#colors option'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"Number of options:\"\u001b[39m\u001b[33m,\u001b[39moptions)\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[90m//await expect(options.length).toBe(5);\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "Canada\n"
-                    },
-                    {
-                      "text": "United Kingdom\n"
-                    },
-                    {
-                      "text": "Germany\n"
-                    },
-                    {
-                      "text": "France\n"
-                    },
-                    {
-                      "text": "Australia\n"
-                    },
-                    {
-                      "text": "Japan\n"
-                    },
-                    {
-                      "text": "China\n"
-                    },
-                    {
-                      "text": "Brazil\n"
-                    },
-                    {
-                      "text": "India\n"
+                      "location": {
+                        "file": "D:\\playwrightautomation\\tests\\MultiSelectDropdown.spec.js",
+                        "column": 51,
+                        "line": 16
+                      },
+                      "message": "TypeError: page.$$(...).textContent is not a function\n\n\u001b[0m \u001b[90m 14 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m     \u001b[90m//2) check number of options in dropdown using JS array\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mconst\u001b[39m options\u001b[33m=\u001b[39m\u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39m$$(\u001b[32m'#colors option'\u001b[39m)\u001b[33m.\u001b[39mtextContent()\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m\"Number of options:\"\u001b[39m\u001b[33m,\u001b[39moptions)\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m     \u001b[90m//await expect(options.length).toBe(5);\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m\u001b[0m\n\n\u001b[2m    at D:\\playwrightautomation\\tests\\MultiSelectDropdown.spec.js:16:51\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2023-10-24T09:31:27.935Z",
-                  "attachments": []
+                  "startTime": "2023-10-25T14:03:24.046Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "D:\\playwrightautomation\\tests\\MultiSelectDropdown.spec.js",
+                    "column": 51,
+                    "line": 16
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "bee60c1b28c44ffe6122-f933b8067fce2e93ed52",
-          "file": "DropDowns.spec.js",
+          "id": "ad8136219561042f24c3-213d697617c92a910ec7",
+          "file": "MultiSelectDropdown.spec.js",
           "line": 3,
           "column": 1
         }
@@ -137,7 +130,7 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2023-10-24T09:31:27.038Z",
-    "duration": 13604.372
+    "startTime": "2023-10-25T14:03:22.957Z",
+    "duration": 10265.609
   }
 }
